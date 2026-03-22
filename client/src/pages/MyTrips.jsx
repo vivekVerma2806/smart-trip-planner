@@ -15,7 +15,7 @@ export default function MyTrips() {
 
   const fetchTrips = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/trips/my", {
+      const res = await axios.get("https://smart-trip-planner-8rdv.onrender.com/trips/my", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setTrips(res.data);
