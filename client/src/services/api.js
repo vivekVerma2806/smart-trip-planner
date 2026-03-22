@@ -3,7 +3,7 @@ import axios from "axios";
 export const getTripPlan = async (data) => {
   try {
     const res = await axios.post(
-      "http://localhost:5000/plan-trip", 
+      "https://smart-trip-planner-8rdv.onrender.com/plan-trip", 
       data
     );
     return res.data;
