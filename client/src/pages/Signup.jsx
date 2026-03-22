@@ -17,7 +17,7 @@ export default function Signup() {
     setLoading(true);
     setError("");
     try {
-      const res = await axios.post("http://localhost:5000/auth/register", { name, email, password });
+      const res = await axios.post("https://smart-trip-planner-8rdv.onrender.com/auth/register", { name, email, password });
       login(res.data.user, res.data.token);
       navigate("/");
     } catch (err) {
