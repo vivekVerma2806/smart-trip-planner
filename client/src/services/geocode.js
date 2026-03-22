@@ -1,7 +1,7 @@
 export const getCoordinates = async (place) => {
   try {
     const res = await fetch(
-      `http://localhost:5000/geocode?place=${encodeURIComponent(place)}`
+      `https://smart-trip-planner-8rdv.onrender/geocode?place=${encodeURIComponent(place)}`
     );
 
     if (!res.ok) return null;
