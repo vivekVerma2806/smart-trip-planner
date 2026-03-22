@@ -89,17 +89,6 @@ npm run dev
 
 ---
 
-## 📸 Demo
-<img width="1859" height="925" alt="image" src="https://github.com/user-attachments/assets/af7bfbba-79e2-43d7-9db3-a5352c714cfb" />
-<img width="1858" height="846" alt="image" src="https://github.com/user-attachments/assets/4f7e9241-b8ca-456e-9d69-beee09082950" />
-<img width="1638" height="795" alt="image" src="https://github.com/user-attachments/assets/a2d12cfe-7bf5-4962-b276-5764b8d258eb" />
-
-
-
-
-
-
-
 ---
 
 ## 📌 Key Highlights
