@@ -18,7 +18,7 @@ export default function SharedTrip() {
   useEffect(() => {
     const fetchSharedTrip = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/trips/public/${id}`);
+        const res = await axios.get(`https://smart-trip-planner-8rdv.onrender.com/trips/public/${id}`);
         setTrip(res.data);
       } catch (err) {
         setError("This itinerary could not be found or is no longer shared.");
@@ -33,11 +33,11 @@ export default function SharedTrip() {
     if (!token) return;
     setJoining(true);
     try {
-      await axios.post(`http://localhost:5000/trips/join/${id}`, {}, {
+      await axios.post(`https://smart-trip-planner-8rdv.onrender.com/trips/join/${id}`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
       // Refresh trip data
-      const res = await axios.get(`http://localhost:5000/trips/public/${id}`);
+      const res = await axios.get(`https://smart-trip-planner-8rdv.onrender.com/trips/public/${id}`);
       setTrip(res.data);
     } catch (err) {
       alert(err.response?.data?.error || "Failed to join trip");
